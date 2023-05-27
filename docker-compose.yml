@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  proxy:
+    build:
+      context: .
+      dockerfile: containers/nginx/Dockerfile
+    ports:
+      - "88:88"
